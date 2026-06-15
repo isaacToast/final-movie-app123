@@ -20,6 +20,7 @@ const router = createRouter({
       name: 'movie-detail',
       component: MovieDetailView,
     },
+    { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFoundView }
   ],
 });
 
